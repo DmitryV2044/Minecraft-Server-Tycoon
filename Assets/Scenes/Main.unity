@@ -1859,7 +1859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4572879145813012726, guid: 984b643ec64fc454c83a9774531f8644, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4572879145813012727, guid: 984b643ec64fc454c83a9774531f8644, type: 3}
       propertyPath: m_RootOrder
@@ -2008,13 +2008,26 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5088426139252116491}
+  - component: {fileID: 5608784948642125490}
   m_Layer: 0
-  m_Name: Rabochiy_stol_2
+  m_Name: Computer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
+--- !u!114 &5608784948642125490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5608784948642125489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ca17b370cee4c9094edf66be073a60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!23 &6090641498056904489
 MeshRenderer:
   m_ObjectHideFlags: 0

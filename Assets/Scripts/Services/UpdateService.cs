@@ -13,7 +13,6 @@ namespace Services
         private void Update() => OnUpdate?.Invoke();
 
         private void FixedUpdate() => OnFixedUpdate?.Invoke();
-
     }
 
 }

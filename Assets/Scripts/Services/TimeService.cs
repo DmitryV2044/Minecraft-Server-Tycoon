@@ -4,21 +4,19 @@ using System;
 
 namespace Services
 { 
-    public class TimeService : MonoBehaviour
+    public class TimeService : Singleton<TimeService>
     {
         [SerializeField] private int _timeScale;
         [SerializeField] private int _timeFromStart;
         [SerializeField] private DateTime _globalDatetime;
 
-        public static TimeService Instance;
-
         public int TimeScale => _timeScale;
         public int TimeFromStart => _timeFromStart;
         public DateTime GlobalTime => _globalDatetime;
 
-        private void Awake()
+        public override void Awake()
         {
-            Instance = this;
+            base.Awake();
             _globalDatetime = new DateTime(0, 0, 0, 15, 7, 2022);
             StartCoroutine(TimeCounter());
         }

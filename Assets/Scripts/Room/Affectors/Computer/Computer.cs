@@ -9,7 +9,7 @@ namespace Affectors
     { 
         public override void Affect()
         {
-            
+            Debug.Log("Added 100$ ))");
         }
     }
 }
